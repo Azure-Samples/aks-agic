@@ -32,7 +32,7 @@ This ARM template can be used to deploy a public or private [Azure Kubernetes Cl
 - [AKS-managed AAD integration](https://docs.microsoft.com/en-us/azure/aks/managed-aad)
 - [Azure RBAC for Kubernetes Authorization](https://docs.microsoft.com/en-us/azure/aks/manage-azure-rbac)
 - [Managed identity in place of a service principal](https://docs.microsoft.com/en-us/azure/aks/use-managed-identity)
-- [Azure Active Directory pod-managed identities](https://docs.microsoft.com/en-us/azure/aks/use-azure-ad-pod-identity)
+- [Microsoft Entra ID pod-managed identities](https://docs.microsoft.com/en-us/azure/aks/use-azure-ad-pod-identity)
 - [Azure Network Policies](https://docs.microsoft.com/en-us/azure/aks/use-network-policies)
 - [Azure Monitor for containers add-on](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-enable-new-cluster)
 - [Application Gateway Ingress Controller add-on](https://azure.github.io/application-gateway-kubernetes-ingress/)
@@ -144,7 +144,7 @@ The following picture shows the resources deployed by the ARM template in the MC
 **NOTE**: if you deploy the ARM template without using the companion [deploy.sh](https://raw.githubusercontent.com/paolosalvatori/aks-agic/master/scripts/deploy.sh), make sure to properly install the necessary preview features (for more information, see the script) and specify a value fo the following parameters:
 
 - **aksClusterKubernetesVersion**: The latest version of Kubernetes available in your region
-- **aadProfileAdminGroupObjectIDs**: an array containing the objectId of one or more Azure Active Directory groups for cluster administrator users
+- **aadProfileAdminGroupObjectIDs**: an array containing the objectId of one or more Microsoft Entra ID groups for cluster administrator users
 - **vmAdminPasswordOrKey**: the key or password for the jumpbox virtual machine
 
 ## Application Gateway ##
